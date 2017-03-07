@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "main.css",
+	"file": "sushi.css",
 	"sources": [
-		"styles/main.scss",
+		"styles/sushi.scss",
 		"styles/_vars.scss",
 		"styles/_base.scss",
 		"styles/_nav.scss",
