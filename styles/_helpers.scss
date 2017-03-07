@@ -1,0 +1,9 @@
+/* css clearfix from https://css-tricks.com/snippets/css/clear-fix/ */
+.group::after, .clearfix::after {
+  @include fix-clear;
+}
+
+/* from HTML5 boilerplate */
+.visuallyhidden {
+  @include hide-visually;
+}

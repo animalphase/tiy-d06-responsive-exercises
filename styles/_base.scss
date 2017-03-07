@@ -1,0 +1,71 @@
+html {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.625rem; /*10px equivalent w/ default browser size of 16px*/
+}
+
+body {
+  font-size: 1.6rem;
+  color: $color-primary;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: .3s ease all;
+
+  &:hover {
+    color: #333;
+    transition: .1s ease all;
+  }
+}
+
+
+.page-header {
+  padding: 2rem $padding-page-sides 4rem  $padding-page-sides;
+  text-align: center;
+  @include wrap-max-width-center;
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+  }
+}
+
+.byline {
+  font-weight: normal;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.content {
+  padding: $margin-vertical-standard-spacing $padding-page-sides;
+}
+
+footer {
+  padding: 0 $padding-page-sides;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: $breakpoint-large-and-up) {
+
+
+  .page-header {
+    text-align: left;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  .content {
+    display: flex;
+    @include wrap-max-width-center;
+  }
+}

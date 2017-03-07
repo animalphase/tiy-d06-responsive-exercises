@@ -1,0 +1,33 @@
+$color-primary: #F75267;
+$color-secondary: #d5c0c0;
+$color-background: #fff;
+
+$padding-page-sides: 2rem;
+$margin-vertical-standard-spacing: 5rem;
+
+$max-width-large: 1000px;
+
+$breakpoint-mid-and-up: 700px;
+$breakpoint-large-and-up: 1100px;
+
+@mixin wrap-max-width-center {
+  max-width: $max-width-large;
+  margin: 0 auto;
+}
+
+@mixin hide-visually() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin fix-clear() {
+  content: "";
+  display: table;
+  clear: both;
+}
